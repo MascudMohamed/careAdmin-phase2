@@ -1,0 +1,89 @@
+/* ==========================================================================
+   CareAdmin Solutions — Responsive
+   ========================================================================== */
+
+@media (min-width: 640px) {
+  .complexity-list { grid-template-columns: 1fr 1fr; }
+  .solutions-grid { grid-template-columns: 1fr 1fr; }
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+  .industry-grid { grid-template-columns: 1fr 1fr; }
+  .pillars { grid-template-columns: 1fr 1fr; }
+  .trust-grid { grid-template-columns: 1fr 1fr; }
+  .pricing-grid { grid-template-columns: 1fr 1fr; }
+  .form-row { grid-template-columns: 1fr 1fr; }
+  .future-features { grid-template-columns: 1fr 1fr; }
+  .integration-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
+}
+
+@media (min-width: 768px) {
+  .header-cta { display: block; }
+  .hero-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .intro-grid { grid-template-columns: 1.05fr 0.95fr; }
+  .split { grid-template-columns: 1fr 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; }
+  .contact-layout { grid-template-columns: 1fr 1.2fr; }
+  .footer-grid { grid-template-columns: 1.6fr 1fr 1fr 1.2fr; }
+}
+
+@media (min-width: 980px) {
+  .nav-desktop { display: flex; }
+  .menu-toggle { display: none; }
+  .solutions-grid { grid-template-columns: repeat(3, 1fr); }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .industry-grid { grid-template-columns: repeat(3, 1fr); }
+  .pillars { grid-template-columns: repeat(4, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(4, 1fr); }
+  .process-steps { grid-template-columns: repeat(4, 1fr); }
+  .integration-grid { grid-template-columns: repeat(4, 1fr); }
+  .trust-grid { grid-template-columns: repeat(4, 1fr); }
+  .mockup-body { min-height: 360px; }
+
+  .process-step {
+    padding: 1.75rem 1.35rem 1.75rem;
+    padding-left: 1.35rem;
+    padding-top: 4.25rem;
+  }
+
+  .process-step::before {
+    left: 1.35rem;
+    top: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+  .integration-grid { grid-template-columns: repeat(7, 1fr); }
+}
+
+/* Mobile refinements */
+@media (max-width: 639px) {
+  .complexity-list { grid-template-columns: 1fr; }
+  .mockup-kpis { grid-template-columns: 1fr; }
+  .mockup-panels { grid-template-columns: 1fr; }
+  .mockup-body { grid-template-columns: 48px 1fr; }
+  .eco-node { font-size: 0.65rem; padding: 0.45rem 0.55rem; }
+  .eco-node span { display: none; }
+  .ecosystem-stage { aspect-ratio: 1; max-width: 100%; }
+  .workflow-arrow { display: none; }
+  .workflow { gap: 0.5rem; }
+  .section-title { max-width: none; }
+  .hero h1 { max-width: none; }
+  .resource-item { flex-direction: column; gap: 0.75rem; }
+  .plans-panel { padding: 1.75rem 1.25rem 2rem; }
+  .plans-table th,
+  .plans-table td { font-size: 0.9rem; padding: 1rem 0; }
+}
+
+@media (max-width: 767px) {
+  .logo-tagline { display: none; }
+  .btn-group { width: 100%; }
+  .btn-group .btn { flex: 1 1 auto; justify-content: center; }
+  .final-cta .btn-group .btn { width: 100%; }
+}
+
+/* Print */
+@media print {
+  .site-header, .mobile-nav, .menu-toggle, .final-cta .btn-group { display: none !important; }
+  body { color: #000; background: #fff; }
+}
